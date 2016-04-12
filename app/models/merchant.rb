@@ -1,3 +1,2 @@
-class Merchant < ActiverRecord::Base
-
+class Merchant < ActiveRecord::Base
 end
