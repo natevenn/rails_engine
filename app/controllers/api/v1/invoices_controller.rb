@@ -21,7 +21,7 @@ module Api
 
       private
         def invoice_params
-          params.permit(:id, :customer_id, :merchant_id, :status)
+          params.permit(:id, :customer_id, :merchant_id, :status, :updated_at, :created_at)
         end
     end
   end

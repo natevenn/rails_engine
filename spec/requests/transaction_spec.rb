@@ -13,21 +13,21 @@ RSpec.describe "Transaction API" do
       body = JSON.parse(response.body)
       transaction_result = body.map { |m| m["result"] }
 
-      expect(transaction_names).to match_array(["pending",
+      expect(transaction_result).to match_array(["pending",
                                            "canceled"])
     end
   end
 
   context "GET api/v1/transactions/:id" do
     it 'returns a single transaction' do
-      Transaction.create(id: 1, name: "JoeBob")
+      Transaction.create(id: 1, result: "pending")
 
       get '/api/v1/transactions/1'
 
       expect(response.status).to eq 200
       body = JSON.parse(response.body)
 
-      expect(body['name']).to eq "JoeBob"
+      expect(body['result']).to eq "pending"
     end
   end
 
@@ -48,7 +48,7 @@ RSpec.describe "Transaction API" do
     it 'returns a single transaction with a find action' do
       Transaction.create(id: 1, result: "pending")
 
-      get '/api/v1/transactions/find?result=Pending'
+      get '/api/v1/transactions/find?result=pending'
 
       expect(response.status).to eq 200
       body = JSON.parse(response.body)

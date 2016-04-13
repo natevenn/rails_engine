@@ -12,23 +12,11 @@ module Api
       end
 
       def find
-        if transaction_params[:id]
-          respond_with Transaction.find_by(transaction_params)
-        else
-          key = transaction_params.keys.first
-          value = transaction_params.values.first
-          respond_with Transaction.find_by("lower(#{key}) = ?", value.downcase)
-        end
+        respond_with Transaction.find_by(transaction_params)
       end
 
       def find_all
-        if transaction_params[:id]
-          respond_with Transaction.where(transaction_params)
-        else
-          key = transaction_params.keys.first
-          value = transaction_params.values.first
-          respond_with Transaction.where("lower(#{key}) = ?", value.downcase)
-        end
+        respond_with Transaction.where(transaction_params)
       end
 
       def random
@@ -37,7 +25,7 @@ module Api
 
       private
         def transaction_params
-          params.permit(:id, :invoice_id, :result)
+          params.permit(:id, :invoice_id, :result, :credit_card_number, :updated_at, :created_at)
         end
     end
   end
