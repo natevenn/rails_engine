@@ -5,4 +5,8 @@ class InvoiceItem < ActiveRecord::Base
 
   belongs_to :item
   belongs_to :invoice
+
+  def self.total_price
+    pluck(:quantity, :unit_price).map(&:sum).sum.to_f
+  end
 end
