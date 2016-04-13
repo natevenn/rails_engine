@@ -8,9 +8,9 @@ Rails.application.routes.draw do
         resources :invoices, only: [:index], module: "merchants"
 
         collection do
-          get 'find'
-          get 'find_all'
-          get 'random'
+          get 'find', to: 'merchants/search#show'
+          get 'find_all', to: 'merchants/search#index'
+          get 'random', to: 'merchants/search#random'
         end
       end
 
