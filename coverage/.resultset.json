@@ -249,6 +249,9 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
         null,
         null,
         null,
@@ -336,6 +339,7 @@
         null,
         1,
         1,
+        null,
         null
       ],
       "/Users/Nate/turing/3module/projects/rails_engine/spec/models/invoice_spec.rb": [
@@ -351,6 +355,13 @@
         1,
         1,
         1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        0,
+        null,
         null
       ],
       "/Users/Nate/turing/3module/projects/rails_engine/spec/models/item_spec.rb": [
@@ -363,7 +374,7 @@
       "/Users/Nate/turing/3module/projects/rails_engine/app/models/item.rb": [
         1,
         1,
-        23,
+        24,
         null,
         null,
         1,
@@ -374,10 +385,38 @@
         null,
         1,
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/Nate/turing/3module/projects/rails_engine/app/models/merchant.rb": [
         1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        0,
+        null,
         null
       ],
       "/Users/Nate/turing/3module/projects/rails_engine/spec/models/transaction_spec.rb": [
@@ -390,6 +429,8 @@
       "/Users/Nate/turing/3module/projects/rails_engine/app/models/transaction.rb": [
         1,
         1,
+        null,
+        null,
         null
       ],
       "/Users/Nate/turing/3module/projects/rails_engine/spec/requests/customer_invoice_spec.rb": [
@@ -1484,6 +1525,22 @@
         null,
         null,
         1,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Nate/turing/3module/projects/rails_engine/app/controllers/api/v1/merchants/search_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
         2,
         null,
         null,
@@ -1493,15 +1550,6 @@
         null,
         1,
         0,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        3,
         null,
         null,
         null,
@@ -1554,6 +1602,6 @@
         null
       ]
     },
-    "timestamp": 1460556913
+    "timestamp": 1460591047
   }
 }
