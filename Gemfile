@@ -18,6 +18,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
+  gem 'simplecov', :require => false, :group => :test
 end
 
 group :development do
