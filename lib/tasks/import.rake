@@ -3,7 +3,7 @@ require 'csv'
 desc "Import customers from csv file"
 task :import => [:environment] do
 
-  file = "sales_engine/data/customers.csv"
+  file = "data/customers.csv"
   count = 0
 
   CSV.foreach(file, :headers => true) do |row|
@@ -21,7 +21,7 @@ end
 desc "Import merchants from csv file"
 task :import => [:environment] do
 
-  file = "sales_engine/data/merchants.csv"
+  file = "data/merchants.csv"
   count = 0
 
   CSV.foreach(file, :headers => true) do |row|
@@ -38,7 +38,7 @@ end
 desc "Import invoices from csv file"
 task :import => [:environment] do
 
-  file = "sales_engine/data/invoices.csv"
+  file = "data/invoices.csv"
   count = 0
 
   CSV.foreach(file, :headers => true) do |row|
@@ -57,7 +57,7 @@ end
 desc "Import items from csv file"
 task :import => [:environment] do
 
-  file = "sales_engine/data/items.csv"
+  file = "data/items.csv"
   count = 0
 
   CSV.foreach(file, :headers => true) do |row|
@@ -77,7 +77,7 @@ end
 desc "Import invoices_items from csv file"
 task :import => [:environment] do
 
-  file = "sales_engine/data/invoice_items.csv"
+  file = "data/invoice_items.csv"
   count = 0
 
   CSV.foreach(file, :headers => true) do |row|
@@ -98,7 +98,7 @@ end
 desc "Import transactions from csv file"
 task :import => [:environment] do
 
-  file = "sales_engine/data/transactions.csv"
+  file = "data/transactions.csv"
   count = 0
 
   CSV.foreach(file, :headers => true) do |row|
