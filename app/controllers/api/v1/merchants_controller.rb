@@ -11,11 +11,10 @@ module Api
         respond_with Merchant.find(params[:id])
       end
 
-      private
+    private
       def merchant_params
         params.permit(:id, :name, :created_at, :updated_at)
       end
     end
   end
-
 end

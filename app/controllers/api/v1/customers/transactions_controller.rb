@@ -6,6 +6,3 @@ class Api::V1::Customers::TransactionsController < ApplicationController
     respond_with Transaction.where(invoice_id: invoices)
   end
 end
-
-
-

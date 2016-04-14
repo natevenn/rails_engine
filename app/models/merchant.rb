@@ -32,5 +32,4 @@ class Merchant < ActiveRecord::Base
       where(transactions: {result: 'success'}).group(:id).
       order('transaction_count DESC').first
   end
-
 end

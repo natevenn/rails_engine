@@ -5,4 +5,3 @@ class Api::V1::Invoices::InvoiceItemsController < ApplicationController
     respond_with InvoiceItem.where(invoice_id: params['invoice_id'])
   end
 end
-
