@@ -3,7 +3,7 @@ Rails Engine is an API that was build as a student project. The main purpose of 
 
 #### Rails Engine Setup
 * `clone` down the project
-* `cd` into rails engine - the name of the project
+* `cd` into rails_engine 
 * `bundle`
 * run `rake db:setup`
 * run `rake import` to setup the database - this rake task populates the the database with all the csv files in the data folder
@@ -13,7 +13,7 @@ Rails Engine is an API that was build as a student project. The main purpose of 
 
 #### Spec Harness
 * `clone` down the spec harness 
-* `cd` into the project
+* `cd` rales_engine_spec_harness
 * `bundle`
 * the test assumes that your rails engine in running in http://localhost:3000
 * in the spec harness run `rake` to test the rails engine project
