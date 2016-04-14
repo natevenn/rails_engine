@@ -5,7 +5,9 @@ Rails.application.routes.draw do
       resources :merchants, only: [:show, :index] do
 
         resources :items, only: [:index], module: "merchants"
-        resources :invoices, only: [:index], module: "merchants"
+        get :invoices, to: 'merchants/invoices#index'
+        get :revenue, to: 'merchants/merchant_revenue#show'
+        get :favorite_customer, to: 'merchants/favorite_customer#show'
 
         collection do
           get 'find', to: 'merchants/search#show'
@@ -13,7 +15,7 @@ Rails.application.routes.draw do
           get 'random', to: 'merchants/search#random'
           get 'most_revenue', to: 'merchants/most_revenue#index'
           get 'most_items', to: 'merchants/most_items#index'
-          get 'revenue', to: 'merchants/revenue#show'
+          get 'revenue', to: 'merchants/revenue#index'
         end
       end
 
