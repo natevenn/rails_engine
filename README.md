@@ -1,4 +1,6 @@
-#### Introduction
+### Rails Engine
+
+#### Project Description
 Rails Engine is an API that was build as a student project. The main purpose of the project is to serve an internal API and use advance active record queries to calculate complex buisness intelligents. Here is the link to the [project spec] (https://github.com/turingschool/lesson_plans/blob/master/ruby_03-professional_rails_applications/rails_engine.md).
 
 #### Rails Engine Setup
