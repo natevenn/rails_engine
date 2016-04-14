@@ -22,6 +22,8 @@ Rails.application.routes.draw do
       resources :customers, only: [:show, :index] do
         resources :invoices, only: [:index], module: "customers"
         resources :transactions, only: [:index], module: "customers"
+        get :favorite_merchant, to: 'customers/favorite_merchant#show'
+
         collection do
           get 'find'
           get 'find_all'
